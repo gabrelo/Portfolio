@@ -1,226 +1,255 @@
 body{
-  background-image: url("./jeremy-bishop-8xznAGy4HcY-unsplash.jpg");
-  background-size: cover;
-  background-position: center center;
-  display: grid;
-  place-items: center;
-}
-
-main {
-	 font-family: sans-serif;
-	 overflow-x: hidden;
-	 width: 100%;
-	 height: 60vh;
-	 display: flex;
-   	 margin-top: 100px;
-	 line-height: 1.7;
-	 transform: skewY(-5deg);
-}
-
-.avatar{
-  display: flex;
-}
-
- .bg-text-container {
-	 transform: translateX(-50%);
-	 left: 50%;
-	 position: absolute;
-	 z-index: -999;
-}
- @keyframes text-scrolling {
-	 0% {
-		 transform: translate3d(-150%, 0, 0);
-	}
-	 100% {
-		 transform: translate3d(50%, 0, 0);
-	}
-}
- .animate-text {
-	 animation: text-scrolling 10s linear infinite;
-	 will-change: transform;
-	 display: block;
-	 position: relative;
-	 white-space: nowrap;
-}
- .animate-text.left {
-	 animation-direction: reverse;
-}
- span {
-	 font-size: 200px;
-	 color: transparent;
-	 -webkit-text-stroke: 2px #fffb2b;
-	 text-transform: uppercase;
-	 display: inline-block;
-	 line-height: 0.75;
-	 min-width: auto;
-	 font-weight: 800;
-}
- .container {
-  display: flex;
-  
-	 padding: 30px;
-	 max-width: 1000px;
-	 width: 100%;
-	 margin: 0 auto;
-}
- .container .col {
-	 max-width: 600px;
-	 margin: 0;
-}
- .heading {
-	 font-size: 90px;
-   font-weight: 500;
-	 margin: 0;
-   color: rgb(0, 0, 0);
-   font-family: 'Oswald', sans-serif;
-}
-
-
-
- p {
-	 font-size: 22px;
-	 font-weight: 300;
-	 margin: 0;
-   color: rgb(0, 0, 0);
-}
-
-.boxes{
-  display: flex;
-  width: 1000px;
-  height: 2000px;
-}
-
-
-
-/*polaroid*/
-
-.container {
-	margin: 40px auto;
+	background-image: url("./jeremy-bishop-8xznAGy4HcY-unsplash.jpg");
+	background-size: cover;
+	background-position: center center;
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-	grid-column-gap: 20px;
-	grid-row-gap: 40px;
-	justify-content: center;
-	padding: 0 20px;
-	
+	place-items: center;
   }
   
-  .polaroid {
-	background: rgb(255, 255, 255);
-	padding: 15px 15px 40px;
+  main {
+	   font-family: sans-serif;
+	   overflow-x: hidden;
+	   width: 100%;
+	   height: 60vh;
+	   display: flex;
+	   margin-top: 100px;
+	   line-height: 1.7;
+	   transform: skewY(-5deg);
   }
   
-  .photo {
-	width: 100%;
-	height: 290px;
-	object-fit: cover;
-  }
-
-  .hero__description2{
-	font-size: 30px;
-	font-weight: 500;
-	font-family: 'Oswald', sans-serif;;
-  }
-  
-  .polaroid:hover {
-	transform: scale(1.075);
-	transition: 0.3s ease-in;
-  }
-  
-  .caption {
-	margin-top: 10px;
-  }
-  
-  .social__icons {
+  .avatar{
 	display: flex;
-	text-align: center;
-	justify-content: space-between;
-
-  }
-
-  .social__icon--link {
-	color: white;
-	font-size: 24px;
-	cursor: pointer;
-	width: 100px;
-	justify-content:center;
-	text-align: center;
-	
-  }
-
-  .social__icon--link:hover{
-	color: #fffb2b;
-  }
-
- .botao{
-	color: white;
-	padding: 10px;
-	background: rgb(32, 30, 30);
-	border-radius: 5px;
-	
-  }
-
-  .botao:hover{
-	background: #fffb2b;
-	color: rgb(32, 30, 30);
-	transition: 0.3s ease-in;
-	transform: skewY(-2deg);
   }
   
-  .boxmid{
+   .bg-text-container {
+	   transform: translateX(-50%);
+	   left: 50%;
+	   position: absolute;
+	   z-index: -999;
+  }
+   @keyframes text-scrolling {
+	   0% {
+		   transform: translate3d(-150%, 0, 0);
+	  }
+	   100% {
+		   transform: translate3d(50%, 0, 0);
+	  }
+  }
+   .animate-text {
+	   animation: text-scrolling 10s linear infinite;
+	   will-change: transform;
+	   display: block;
+	   position: relative;
+	   white-space: nowrap;
+  }
+   .animate-text.left {
+	   animation-direction: reverse;
+  }
+   span {
+	   font-size: 200px;
+	   color: transparent;
+	   -webkit-text-stroke: 2px #fffb2b;
+	   text-transform: uppercase;
+	   display: inline-block;
+	   line-height: 0.75;
+	   min-width: auto;
+	   font-weight: 800;
+  }
+   .container {
 	display: flex;
-	min-width: 1400px;
-	padding-bottom: 200px;
-	justify-content: space-around;
-  }
- 
-  .titulo1{
-	color: #fffb2b;
-	font-family: 'Oswald', sans-serif;
-	text-align: center;
-	justify-content: center;
-	font-size: 70px;
-  }
-
-  .social{
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-  }
-
-  #back-to-top {
-    position: fixed;
-    bottom: 50px;
-    right: 50px;
-    width: 40px;
-    height: 40px;
-    font-size: 25px;
-    cursor: pointer;
-	background: rgb(29, 24, 24);
-	color:  white;
-    border: 2px solid #fffb2b;
-  }
-
-  .curriculo{
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-  }
-
-  .botao2{
-	color: rgb(32, 30, 30);
-	padding: 10px;
-	background: white;
-	border-radius: 5px ;
 	
-	
+	   padding: 30px;
+	   max-width: 1000px;
+	   width: 100%;
+	   margin: 0 auto;
   }
-
-  .botao2:hover{
-	background: #fffb2b;
-	color: rgb(32, 30, 30);
-	transition: 0.3s ease-in;
-	transform: skewY(-2deg);
+   .container .col {
+	   max-width: 600px;
+	   margin: 0;
   }
-
+   .heading {
+	   font-size: 90px;
+	 font-weight: 500;
+	   margin: 0;
+	 color: rgb(0, 0, 0);
+	 font-family: 'Oswald', sans-serif;
+  }
   
+  
+  
+   p {
+	   font-size: 22px;
+	   font-weight: 300;
+	   margin: 0;
+	 color: rgb(0, 0, 0);
+  }
+  
+  .boxes{
+	display: flex;
+	width: 1000px;
+	height: 2000px;
+  }
+  
+  
+  
+  /*polaroid*/
+  
+  .container {
+	  margin: 40px auto;
+	  display: grid;
+	  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+	  grid-column-gap: 20px;
+	  grid-row-gap: 40px;
+	  justify-content: center;
+	  padding: 0 20px;
+	  
+	}
+	
+	.polaroid {
+	  background: rgb(255, 255, 255);
+	  padding: 15px 15px 40px;
+	}
+	
+	.photo {
+	  width: 100%;
+	  height: 290px;
+	  object-fit: cover;
+	}
+  
+	.hero__description2{
+	  font-size: 30px;
+	  font-weight: 500;
+	  font-family: 'Oswald', sans-serif;;
+	}
+	
+	.polaroid:hover {
+	  transform: scale(1.075);
+	  transition: 0.3s ease-in;
+	}
+	
+	.caption {
+	  margin-top: 10px;
+	}
+	
+	.social__icons {
+	  display: flex;
+	  text-align: center;
+	  justify-content: space-between;
+  
+	}
+  
+	.social__icon--link {
+	  color: white;
+	  font-size: 24px;
+	  cursor: pointer;
+	  width: 100px;
+	  justify-content:center;
+	  text-align: center;
+	  
+	}
+  
+	.social__icon--link:hover{
+	  color: #fffb2b;
+	}
+  
+   .botao{
+	  color: white;
+	  padding: 10px;
+	  background: rgb(32, 30, 30);
+	  border-radius: 5px;
+	  
+	}
+  
+	.botao:hover{
+	  background: #fffb2b;
+	  color: rgb(32, 30, 30);
+	  transition: 0.3s ease-in;
+	  transform: skewY(-2deg);
+	}
+	
+	.boxmid{
+	  display: flex;
+	  width: 1400px;
+	  padding-bottom: 200px;
+	  justify-content: space-around;
+	}
+   
+	.titulo1{
+	  color: #fffb2b;
+	  font-family: 'Oswald', sans-serif;
+	  text-align: center;
+	  justify-content: center;
+	  font-size: 70px;
+	}
+  
+	.social{
+	  display: flex;
+	  flex-direction: column;
+	  justify-content: center;
+	}
+  
+	#back-to-top {
+	  position: fixed;
+	  bottom: 50px;
+	  right: 50px;
+	  width: 40px;
+	  height: 40px;
+	  font-size: 25px;
+	  cursor: pointer;
+	  background: rgb(29, 24, 24);
+	  color:  white;
+	  border: 2px solid #fffb2b;
+	}
+  
+	.curriculo{
+	  display: flex;
+	  flex-direction: column;
+	  justify-content: center;
+	}
+  
+	.botao2{
+	  color: rgb(32, 30, 30);
+	  padding: 10px;
+	  background: white;
+	  border-radius: 5px ;
+	  
+	  
+	}
+  
+	.botao2:hover{
+	  background: #fffb2b;
+	  color: rgb(32, 30, 30);
+	  transition: 0.3s ease-in;
+	  transform: skewY(-2deg);
+	}
+  
+	@media (max-width: 1600px){
+	  .boxmid{
+		  display: flex;
+		  flex-direction: column;
+		  
+		  width: 1000px;
+		  text-align: center;
+		  justify-content: center;
+		  
+	  }
+	  .avatar{
+		  width: 350px;
+		  text-align: center;
+		  justify-content: center;
+		  margin: auto;
+		  margin-top: 30px;
+		  margin-bottom: 30px;
+	  }
+	  .polaroid:hover {
+		  transform: scale(1.045);
+		  transition: 0.3s ease-in;
+		}
+		.social__icons {
+		  display: flex;
+		  text-align: center;
+		  justify-content:center;
+	  
+		}
+	  
+	}
