@@ -204,6 +204,7 @@ body{
 	}
   
 	#back-to-top {
+	  display: flex;
 	  position: fixed;
 	  text-align: center;
 	  justify-content: center;
