@@ -1,7 +1,10 @@
 body{
-	
+	background-image: url("./jeremy-bishop-8xznAGy4HcY-unsplash.jpg");
+	background-size: cover;
+	background-position: center center;
 	display: grid;
 	place-items: center;
+	justify-content: center;
   }
   
   main {
