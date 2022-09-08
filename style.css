@@ -1,6 +1,6 @@
 body{
 	background-image: url("./jeremy-bishop-8xznAGy4HcY-unsplash.jpg");
-	
+	background-size: cover;
 	 
   }
   
@@ -91,7 +91,7 @@ body{
 	flex-direction: column;
 	justify-content: center;
 	text-align: center;
-	
+	padding-top: 50px;
 	margin: auto;
   }
 
@@ -261,6 +261,20 @@ body{
 	  
 	}
 
+
 	@media (max-width: 900px){
-		cursor: touch-action: ;
+	.social{
+		width: 300px;
+		
+	  }
+	  .container {
+		margin: 40px auto;
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		grid-column-gap: 20px;
+		grid-row-gap: 40px;
+		justify-content: center;
+		padding: 0 20px;
+		
+	  }
 	}
