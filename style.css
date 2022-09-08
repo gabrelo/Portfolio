@@ -4,7 +4,7 @@ body{
 	background-position: center center;
 	display: grid;
 	place-items: center;
-	justify-content: center;
+	 
   }
   
   main {
@@ -168,12 +168,7 @@ body{
 	  transform: skewY(-2deg);
 	}
 	
-	.boxmid{
-	  display: flex;
-	  width: 1400px;
-	  padding-bottom: 200px;
-	  justify-content: space-around;
-	}
+
    
 	.titulo1{
 	  color: #fffb2b;
@@ -225,15 +220,7 @@ body{
 	}
   
 	@media (max-width: 1600px){
-	  .boxmid{
-		  display: flex;
-		  flex-direction: column;
-		  
-		  width: 1000px;
-		  text-align: center;
-		  justify-content: center;
-		  
-	  }
+	
 	  .avatar{
 		  width: 350px;
 		  text-align: center;
